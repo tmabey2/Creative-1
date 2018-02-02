@@ -1,0 +1,142 @@
+<html>
+  <head>
+  <link rel = "stylesheet" href="style.css">
+    <title></title>
+    <meta content="">
+    <style>
+   
+    
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 600px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 500px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 30em;
+
+}
+
+
+      
+    
+    
+    
+    </style>
+  </head>
+  <body>
+  
+  <div class="container">
+		<div class = "header">
+		
+		
+			
+		
+			<label for="show-menu" class="show-menu">Show Menu</label>
+			<input type="checkbox" id="show-menu" role="button">
+        	<ul id="menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li>
+            <a href="#">Shop <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="hidden">
+              <li><a href="broke.html">Buy Sword</a></li>
+              <li><a href="broke.html">Buy Magic Potion</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Adventure <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul class="hidden">
+              <li><a href="road.html">Kill Rats</a></li>
+              <li><a href="#">Coming Soon (Need 50 XP)</a></li>
+              <li><a href="#">Coming Soon (Need 100 XP)</a></li>
+            </ul>
+          </li>
+          <li><a href="letter.html">Send Letter</a></li>
+          <li><a href="water.html">Order Drink</a></li>
+			</ul>	
+			
+			<h1 class="title">Verified Fantasy Doors</h1>
+		</div>  
+  		
+  		<div class = "main">
+  			<h1>Post Office</h1>
+  			<p>You arrive at the counter only to find a sign:<br> "On break. Please fill out the correct form in
+  			triplicate and we will get back to you."</p>
+  		
+			<form action="#"
+      		method="POST">
+    	
+    		
+					<textarea type="text" name="message"></textarea>  	
+    			
+    			
+    				<input class="letterbutton" type="button" value="Leave Letter" onclick="history.back()"/>
+    			
+			</form> 
+  		
+  		</div>
+  		
+  		<div class = "sidebar">
+  			<h1>Journal</h1>
+  			<p><strong>Achievement Unlocked: Cyberphobia</strong>
+  			<br>Tried to send a letter using a computer.</p>
+  			
+  		
+  		</div>
+  		
+  		
+  		<div class = "inventory">
+  		
+  		<h1>You have no inventory. If you did, items would be displayed here.</h1>
+  		
+  		
+  		</div>
+		<div class="map">
+		
+		<h1>Mapmakers still on strike.</h1>
+		
+		</div>  		
+  		
+  		
+  		<div class = "footer">
+			<h1>https://github.com/tmabey2/Creative-1</h1>  		
+  		</div>
+  
+  
+  </div>
+		 
+  </body>
+</html>
